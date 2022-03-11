@@ -159,7 +159,7 @@ const displayLikedPosts = () => {
 const displayReportedPosts = () => {
     const reportedPosts = getReportedPosts();
     document.getElementById("reported").innerHTML = "";
-    Posts.forEach((post) => {
+    reportedPosts.forEach((post) => {
         const div = createPost(post);
         document.getElementById("reported").appendChild(div);
     });
